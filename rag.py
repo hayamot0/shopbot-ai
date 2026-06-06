@@ -18,8 +18,8 @@ def load_rag_pipeline():
         model="gemini-2.5-flash",
         temperature=0
     )
-
-    loader=DirectoryLoader("knowledge_base/",glob="*.txt",loader_cls=TextLoader)
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    loader=DirectoryLoader(os.path.join(BASE_DIR, "knowledge_base/"),glob="*.txt",loader_cls=TextLoader)
     documents=loader.load()
     text_splitter=RecursiveCharacterTextSplitter(
             chunk_size=500,
@@ -28,7 +28,7 @@ def load_rag_pipeline():
         )
 
     chunks=text_splitter.split_documents(documents)
-    FAISS_PATH = "faiss_db/"
+    FAISS_PATH = os.path.join(BASE_DIR, "faiss_db/")
     FAISS_INDEX = "faiss_shopbot"
 
     if os.path.exists(f"{FAISS_PATH}{FAISS_INDEX}.faiss"):

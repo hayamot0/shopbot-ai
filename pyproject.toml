@@ -13,6 +13,7 @@ dependencies = [
     "langchain-google-genai>=4.2.4",
     "mcp>=1.27.2",
     "mysql-connector-python>=9.7.0",
+    "pandas>=3.0.3",
     "pymongo>=4.17.0",
     "pymysql>=1.2.0",
     "python-dotenv>=1.2.2",

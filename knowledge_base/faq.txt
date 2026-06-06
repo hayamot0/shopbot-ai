@@ -1,0 +1,20 @@
+Q: What payment methods do you accept?
+A: We accept Visa, Mastercard, PayPal, and cash on delivery for eligible regions.
+
+Q: How do I track my order?
+A: You can track your order using your tracking number on our website's order tracking page. Tracking numbers are sent via email once your order ships.
+
+Q: Can I change my order after placing it?
+A: Orders can be modified within 2 hours of placement. After that, the order enters processing and cannot be changed.
+
+Q: Do you offer gift wrapping?
+A: Yes, gift wrapping is available for an additional $3 per item. Select the option at checkout.
+
+Q: How do I contact customer support?
+A: You can reach us via live chat on our website, email at support@shopbot.com, or phone at +1-800-SHOPBOT during business hours (9am-6pm GMT).
+
+Q: Is my payment information secure?
+A: Yes, all transactions are encrypted using SSL technology. We never store your full card details.
+
+Q: Do you have a loyalty program?
+A: Yes, earn 1 point per $1 spent. Every 100 points = $5 discount on your next order.

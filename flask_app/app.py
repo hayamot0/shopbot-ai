@@ -74,6 +74,7 @@ def chat():
         return jsonify({"response": "I'm sorry, I couldn't process that request."}), 200
     finally:
         loop.close()
+        
 @app.route('/')
 def index():
     return render_template('index.html')

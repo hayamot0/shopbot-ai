@@ -9,6 +9,19 @@ A domain-specific AI customer support agent for e-commerce, built with Python an
 
 ---
 
+## The Problem It Solves
+
+**Problem:**
+E-commerce stores receive hundreds of repetitive support requests — "Where is my order?", "What is your return policy?", "Do you have this in stock?" — that consume staff time and slow down response times.
+
+**Solution:**
+ShopBot gives businesses a deployable AI support agent that connects directly to their order database and knowledge base. Customers get instant, accurate answers without a human in the loop.
+
+**Result:**
+Demonstrates how small e-commerce businesses can reduce support workload, eliminate repetitive queries, and provide 24/7 accurate order information — with a fully custom stack they own and control.
+
+---
+
 ## What It Does
 
 ShopBot handles two types of customer queries intelligently:

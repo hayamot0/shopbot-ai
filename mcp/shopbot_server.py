@@ -12,8 +12,7 @@ load_dotenv(os.path.join(BASE_DIR, "..", ".env"))
 mcp=FastMCP("Shopbot_Server")
 rag_chain=load_rag_pipeline()
 
-engine=create_engine("mysql+pymysql://root:@localhost/shopbot")
-
+engine = create_engine(os.getenv("DB_CONNECTION_STRING"))
 @mcp.tool(name="check_order_status")
 def  check_order_history(order_id:int):
     database=pd.read_sql("SELECT order_id, product, status, order_date, tracking_number from orders where order_id=%s",

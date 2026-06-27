@@ -5,6 +5,9 @@ from mcp.server.fastmcp import FastMCP
 from rag import load_rag_pipeline
 from sqlalchemy import create_engine
 import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv()
 
 mcp=FastMCP("Shopbot_Server")
 

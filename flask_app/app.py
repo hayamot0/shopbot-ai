@@ -19,7 +19,7 @@ app=Flask(__name__)
 async def get_bot_response(user_message):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     params = StdioServerParameters(
-        command="python3",
+        command=sys.executable,
         args=[os.path.join(BASE_DIR, "mcp/shopbot_server.py")]
     )
     async with stdio_client(params) as (reader, writer):

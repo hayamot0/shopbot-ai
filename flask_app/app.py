@@ -19,9 +19,10 @@ app=Flask(__name__)
 async def get_bot_response(user_message):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     params = StdioServerParameters(
-        command=sys.executable,
-        args=[os.path.join(BASE_DIR, "mcp/shopbot_server.py")]
-    )
+    command=sys.executable,
+    args=[os.path.join(BASE_DIR, "mcp/shopbot_server.py")],
+    env=os.environ.copy()
+)
     async with stdio_client(params) as (reader, writer):
         async with ClientSession(reader, writer) as session:
             await session.initialize()
@@ -83,6 +84,8 @@ def index():
 if __name__=="__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=False)
+
+
 
 
 

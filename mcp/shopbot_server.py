@@ -9,10 +9,8 @@ from dotenv import load_dotenv
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(BASE_DIR, "..", ".env"))
-
-
+print("DEBUG GOOGLE_API_KEY:", os.getenv("GOOGLE_API_KEY"))  # ADD THIS LINE
 mcp=FastMCP("Shopbot_Server")
-
 rag_chain=load_rag_pipeline()
 
 engine=create_engine("mysql+pymysql://root:@localhost/shopbot")
